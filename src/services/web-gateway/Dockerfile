@@ -1,5 +1,5 @@
 # Build ./public
-FROM node:17 AS build-react
+FROM node:18 AS build-react
 WORKDIR /service
 COPY ./services/web-gateway/src/public ./src/public
 COPY ./services/web-gateway/package.json .
